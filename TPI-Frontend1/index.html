@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fuentes que se ven
+
+        Be Vietnam 500
+        Be Vietnam 700
+    -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Padre del Header/barra de navegacion -->
+
+    <header role="banner" class="contenedor-padre-nav-header">
+      <!-- DIV para el logotipo de la barra de navegación -->
+
+      <a
+        id="nav-skip-to-main-content"
+        role="button"
+        href="#root-app"
+        class="nav-skip-to-main-content"
+        aria-label="saltar al contenido"
+      ></a>
+
+      <a class="nav-logotipo" href="index.html"></a>
+
+      <nav class="navbar">
+        <a href="Sports">Sports</a>
+        <a href="Products">Products</a>
+        <a href="About Us">About us</a>
+        <a href="Trainning">Trainning</a>
+        <a href="Community">Community</a>
+      </nav>
+      <button class="contact-button">Contact</button>
+      <div class="hamburger-menu">
+        <img src="img/icon-hamburger.svg" alt="Menú" />
+      </div>
+    </header>
+    <main>
+      <!--------- Parte del jugador ¿Portada? --------->
+
+      <section class="portada-section">
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <article class="portada-container">
+          <!-- Contenedor interno de la sección, donde está la img y el texto -->
+          <img src="img/padel-intro.png" />
+          <div class="portada-text-container">
+            <!-- Contenedor de los elementos de texto -->
+            <!-- No estoy 100% si realmente este corresponde a un h1-->
+            <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+            <p>
+              The final Open of the 2022 World Padel Tour season is underway,
+              don't miss out on any of the action!
+            </p>
+            <button>Contact</button>
+          </div>
+        </article>
+      </section>
+
+      <!---------- Banner intermedio ---------->
+
+      <section class="midbanner-container">
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <h2>What's different between pros?</h2>
+        <p class="texto1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+          dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
+        </p>
+        <p class="texto2">
+          Manage provides all the functionality your teas needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams
+        </p>
+      </section>
+
+      <!---------- Sección de triple cuadros ---------->
+
+      <section class="trescuadros-section">
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <article class="trescuadros-container">
+          <!-- Contenedor de los 2 primeros cuadros -->
+          <div class="cuadro-container">
+            <!-- Contenedor de 1 cuadro -->
+            <div>
+              <!-- Contenedor del titulo con el número -->
+              <label class="number-label">01</label
+              ><label class="titulo-cuadro">Track Company-wide progress</label>
+            </div>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+          <div class="cuadro-container">
+            <div>
+              <label class="number-label">02</label
+              ><label class="titulo-cuadro">Advance built-in reports</label>
+            </div>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+        </article>
+
+        <article class="trescuadros-container">
+          <!-- Contenedor del 3er cuadro -->
+          <div class="cuadro-container">
+            <div>
+              <label class="number-label">03</label
+              ><label class="titulo-cuadro"
+                >Everything you need in one place</label
+              >
+            </div>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!---------- Best of the Month ---------->
+
+      <section class="bestofmont-section">
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <h2>Best of the Month</h2>
+        <div class="bestofmont-container">
+          <!-- Contenedor general de los 3 cuadros -->
+          <article class="bestofmont-card hidden-card">
+            <!-- Contenedor de cada cuadro -->
+            <img class="avatar-img" src="img/avatar-sanyo.png" />
+            <h3>Sanyo</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article class="bestofmont-card">
+            <img class="avatar-img" src="img/avatar.lebron.png" />
+            <h3>Lebron</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article class="bestofmont-card hidden-card">
+            <img class="avatar-img" src="img/avatar-navarro.png" />
+            <h3>Navarro</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+        </div>
+        <button>More</button>
+      </section>
+
+      <!---------- Banner final ---------->
+
+      <section class="final-banner-section">
+        <h2>Get to know the best teams of the year</h2>
+        <button>Go for it</button>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-contain">
+            <div class="footer-social">
+              <img
+                class="footer-logo"
+                src="./img/Logotipo-Footer.svg"
+                alt="Logo footer en color blanco"
+              />
+              <div class="social-icons">
+                <img src="./img/icon-facebook.svg" alt="icon-facebook" />
+                <img src="./img/icon-youtube.svg" alt="icon-youtube" />
+                <img src="./img/icon-twitter.svg" alt="icon-twitter" />
+                <img src="./img/icon-pinterest.svg" alt="icon-pinterest" />
+                <img src="./img/icon-instagram.svg" alt="icon-instagram" />
+              </div>
+            </div>
+            <div class="footer-nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trainning</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-form">
+              <form action="/Registro" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Update in your inbox..."
+                />
+                <button type="submit" class="Boton-Form">Go</button>
+              </form>
+            </div>
+          </div>
+          <p class="footer-copyright">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

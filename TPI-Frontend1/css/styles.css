@@ -1,0 +1,720 @@
+/* Importación de fuentes*/
+
+@font-face {
+  font-family: "Be Vietnam 700";
+  src: url("../be-vietnam/BeVietnam-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Be Vietnam 500";
+  src: url("../be-vietnam/BeVietnam-Medium.woff") format("woff");
+}
+
+/* Configuración universal */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam 500", sans-serif;
+}
+
+/* Estilos del encabezado */
+
+header {
+  position: sticky; /* Hace que la barra de navegación sea sticky */
+  top: 0; /* La barra de navegación se pegará en la parte superior */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1% 2%;
+  color: #242e52;
+  z-index: 100; /* Asegura que la barra esté sobre otros elementos */
+}
+
+.nav-logotipo {
+  width: 7.5vw;
+  height: 1.73611vw;
+  display: block;
+  background-image: url("../img/logo.svg");
+  background-size: cover;
+  transition: transform 0.3s ease; /* Agrega una transición para la animación */
+}
+
+/* CSS para el botón de contacto */
+
+.contact-button {
+  background-color: #8b48bf; /* Morado */
+  color: #fff; /* Letras blancas */
+  border: none;
+  border-radius: 50px; /* Botón en forma de píldora */
+  padding: 10px 20px; /* Ajusta el tamaño del botón según sea necesario */
+  margin-left: 10px; /* Espacio entre el menú y el botón */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Agrega una transición para la animación */
+}
+
+/* ANIMACIONES DEL HEADER/NAVBAR */
+
+/* Agrega estilos para la animación al pasar el mouse por encima */
+.nav-logotipo:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del logotipo en un 10% */
+}
+
+nav a:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de los elementos del menú en un 10% */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el menú */
+  flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+}
+
+nav a {
+  color: #242e52;
+  text-decoration: none;
+  margin-right: 2%;
+}
+
+.contact-button:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño del BOTON de CONTACTO de la NAV-BAR en un 10% */
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Portada */
+
+.portada-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.944vw 0;
+}
+
+.portada-container img {
+  width: 37.5vw;
+}
+
+.portada-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 31.25vw;
+  height: 27.7777vw;
+  margin-left: 6.25vw;
+}
+
+h1,
+.portada-text-container p {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.47222vw;
+  font-family: "Be Vietnam 700";
+  color: #232c50;
+  line-height: 114.6%;
+}
+
+.portada-text-container p {
+  font-size: 1.1111vw;
+  font-family: "Be Vietnam 500";
+  line-height: 157.1%;
+}
+
+.portada-text-container button {
+  color: white;
+  background-color: #8b48bf;
+  border: 0;
+  border-radius: 3.47222vw;
+  padding: 0.6944vw;
+  font-size: 0.9027vw;
+  width: 9.305vw;
+  height: 3.055vw;
+}
+
+/* Sección Banner intermedio */
+
+.midbanner-container {
+  background-color: #8b48bf;
+  color: white;
+  height: 11.666vw;
+  padding: 2.7777vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.midbanner-container h2 {
+  width: 31.25vw;
+  margin: 0 3.4722vw;
+  font-family: "Be Vietnam 700";
+  font-size: 2.5vw;
+  line-height: 2.8472vw;
+}
+
+.texto1,
+.texto2 {
+  width: 31.25vw;
+  margin: 0 3.4722vw;
+  font-size: 1.111vw;
+  line-height: 1.666vw;
+}
+
+.texto2 {
+  display: none;
+}
+
+/* Seccion triple-cuadros */
+
+.trescuadros-section {
+  background-color: #fafafa;
+  padding: 2.777vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 29.722vw;
+}
+
+.trescuadros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11.25vw;
+}
+
+.cuadro-container {
+  width: 36.805vw;
+}
+
+.number-label {
+  display: inline-block;
+  text-align: center;
+  background-color: #8b48bf;
+  border-radius: 2.0833vw;
+  font-family: "Be Vietnam 700";
+  line-height: 2.98611vw;
+  height: 2.9861vw;
+  width: 4.7916vw;
+  color: white;
+  margin-right: 1.5972vw;
+  font-size: 1.111vw;
+}
+
+.titulo-cuadro {
+  color: #323851;
+  font-family: "Be Vietnam 700";
+  letter-spacing: -0.0166vw;
+  font-size: 1.111vw;
+}
+
+.cuadro-container p {
+  letter-spacing: -0.0113194vw;
+  color: #b3b2b7;
+  padding-left: 6.388vw;
+  font-size: 1.111vw;
+}
+
+/* Seccion Best of the Month*/
+
+.bestofmont-section {
+  padding: 0 5.5555vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.bestofmont-section h2 {
+  font-size: 2.7083vw;
+  font-family: "Be Vietnam 700";
+  text-align: center;
+  margin: 6.944vw 0;
+}
+
+.bestofmont-container {
+  display: flex;
+}
+
+.bestofmont-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 1vw;
+  height: 15.277vw;
+  position: relative;
+}
+
+.avatar-img {
+  width: 4.8611vw;
+  height: 4.8611vw;
+  border-radius: 2.4305vw;
+  position: absolute;
+  top: -2.4305vw;
+}
+
+.bestofmont-card h3 {
+  margin: 1.4583vw 0;
+  padding: 0;
+  font-size: 1.111vw;
+  letter-spacing: -0.161px;
+}
+
+.bestofmont-card p {
+  color: #b9b9c1;
+  text-align: center;
+  font-family: "Be Vietnam 500";
+  font-size: 1.111vw;
+  line-height: 156.6%;
+}
+
+.bestofmont-section button {
+  margin: 3.125vw auto 12.5vw auto;
+  border-radius: 3.4722vw;
+  background: rgba(139, 72, 191, 0.7);
+  border: 0;
+  color: white;
+  width: 9.3055vw;
+  height: 3.0555vw;
+  padding: 0.6944vw;
+  font-size: 0.90277vw;
+}
+
+/* Final Banner section */
+
+.final-banner-section {
+  background-color: #8b48bf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15.5555vw;
+  color: white;
+  padding: 4.444vw 14.5833vw 4.444vw 11.45833vw;
+}
+
+.final-banner-section h2 {
+  font-family: "Be Vietnam 700";
+  font-size: 2.7777vw;
+  letter-spacing: -0.01388vw;
+  width: 27.2916vw;
+  line-height: 120%;
+  letter-spacing: -0.01388vw;
+}
+
+.final-banner-section button {
+  background-color: white;
+  font-family: "Be Vietnam 500";
+  color: #8b48bf;
+  border: 0;
+  border-radius: 3.472vw;
+  font-size: 0.9027vw;
+  width: 9.3055vw;
+  height: 3.555vw;
+}
+
+/* Estilos del footer */
+
+.footer-main {
+  background-color: #1E1E26 ;
+}
+
+.footer-main .container {
+  padding: 2rem 10rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.footer-contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.footer-social .social-icons {
+  /* border: 2px solid red; */
+  display: flex;
+  column-gap: 0.9rem;
+}
+
+.footer-nav ul {
+  /* border: 2px solid red; */
+  columns: 2;
+  list-style: none;
+  column-gap: 7rem;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color:#FFF;
+  text-decoration: none;
+}
+
+.footer-form form input,
+ .footer-form form button {
+  border: none;
+  border-radius: 50px;
+}
+
+.footer-form form input {
+  /* border: 2px solid red; */
+  width: 308px;
+  height: 44px;
+  font-size: 13.18px;
+  font-weight: 600;
+  padding: 12.5px 0 10px 12.5px;
+  color: #A0A0A0;
+}
+
+.footer-form form button {
+  color: #FFF;
+  font-size: 13.18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #8b48bf;
+  margin-left: 9px;
+  
+}
+
+.footer-copyright {
+  text-align: right;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #8C8C94;
+}
+
+/* MEDIA QUERY*/
+
+@media screen and (max-width: 768px) {
+  /* HEADER MÓVIL */
+
+  header {
+    margin-top: 6.3333vw;
+    padding: 2vw 11.666vw 2vw 11.666vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-logotipo {
+    width: 22.5vw;
+    height: 5.2083vw;
+    margin: 0;
+  }
+
+  .navbar,
+  .contact-button,
+  #nav-skip-to-main-content {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu img {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+
+  /* PORTADA */
+  .portada-section,
+  .portada-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .portada-section {
+    padding-top: 11.33vw;
+  }
+
+  .portada-container {
+    flex-direction: column;
+    width: 83%;
+    padding: 0;
+  }
+
+  .portada-container img {
+    width: 100%;
+  }
+
+  .portada-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 8.33vw;
+  }
+
+  h1,
+  .portada-text-container p {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-family: "Be Vietnam 700", sans-serif;
+  }
+
+  h1 {
+    color: #232c50;
+    margin-top: 20.833vw;
+    font-size: 10.5vw;
+    line-height: 114%; /* 57.3px */
+    letter-spacing: -0.36vw;
+  }
+
+  .portada-text-container p {
+    font-size: 16px;
+    margin: 28px 0;
+    line-height: 157.1%;
+    font-size: 3.43vw;
+  }
+
+  .portada-text-container button {
+    color: white;
+    background-color: #8b48bf;
+    border: 0;
+    border-radius: 10.416vw;
+    padding: 2.0833vw;
+    font-size: 2.70833vw;
+    width: 27.9166vw;
+    height: 9.166vw;
+  }
+
+  /* PRIMER BANNER */
+
+  .midbanner-container {
+    background-color: #3cddf3;
+    height: auto;
+    padding: 8.33vw 4.16vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .midbanner-container h2 {
+    margin: 0 0 10.4vw 0;
+    line-height: 114.6%;
+    font-size: 7.5vw;
+    width: 100%;
+  }
+
+  .texto1 {
+    display: none;
+  }
+  .texto2 {
+    display: block;
+    margin: 0;
+    font-size: 3.33vw;
+    line-height: 151.1%;
+    width: 100%;
+  }
+
+  /* Sección triple cuadros */
+
+  .trescuadros-section {
+    height: auto;
+    padding: 13.54vw 0 7.29vw 7.08vw;
+    background-color: #fff;
+  }
+
+  .trescuadros-container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .number-label {
+    display: inline-block;
+    border-radius: 6.25vw;
+    font-family: "Be Vietnam 700";
+    line-height: 8.9583vw;
+    height: 8.9583vw;
+    width: 14.375vw;
+    color: white;
+    margin-right: 0;
+    font-size: 3.333vw;
+  }
+
+  .cuadro-container {
+    width: 100%;
+  }
+
+  .cuadro-container div {
+    background-color: rgba(139, 72, 191, 0.3);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .titulo-cuadro {
+    padding-left: 3.75vw;
+    color: #323851;
+    font-size: 3.333vw;
+  }
+
+  .cuadro-container p {
+    letter-spacing: -0.163px;
+    color: #b3b2b7;
+    padding: 2.08vw;
+    line-height: 156.6%;
+    margin: 4.375vw 3.75vw 4.375vw 0;
+    font-size: 3.333vw;
+  }
+
+  /* BEST OF MONTH SECTION */
+
+  .bestofmont-section {
+    padding: 0 3.75vw;
+  }
+
+  .bestofmont-section h2 {
+    font-size: 8.125vw;
+    font-family: "Be Vietnam 700";
+    text-align: center;
+    margin: 0 0 22.91vw 0;
+  }
+
+  .bestofmont-card {
+    height: auto;
+    padding: 11.66vw 5.8vw 5.83vw 5.8vw;
+  }
+
+  .avatar-img {
+    width: 14.583vw;
+    height: 14.583vw;
+    border-radius: 7.2916vw;
+    position: absolute;
+    top: -7.2916vw;
+  }
+
+  .bestofmont-card h3 {
+    height: auto;
+    font-size: 3.33vw;
+    margin: 0 0 3.958vw 0;
+  }
+
+  .hidden-card {
+    display: none;
+  }
+
+  .bestofmont-card p {
+    font-size: 3.333vw;
+  }
+
+  .bestofmont-section button {
+    background-color: #8b48bf;
+    height: 9.16vw;
+    width: 27.916vw;
+    font-size: 2.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.8vw;
+    margin-bottom: 12.083vw;
+  }
+
+  /* BANNER FINAL */
+
+  .final-banner-section {
+    background-color: #3cddf3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 8.333vw 10.416vw;
+  }
+
+  .final-banner-section h2 {
+    width: 67.5vw;
+    text-align: center;
+    line-height: 119.6%;
+    font-size: 8.333vw;
+    letter-spacing: 0.25vw;
+    margin-bottom: 10.416vw;
+  }
+
+  .final-banner-section button {
+    border-radius: 10.416vw;
+    color: white;
+    background-color: #232c50;
+    box-shadow: 0px 0.833vw 1.666vw 0px rgba(0, 0, 0, 0.25);
+    font-size: 2.71vw;
+    display: flex;
+    width: 27.916vw;
+    height: 9.1666vw;
+    padding: 2.083vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ESTILOS FOOTER MOBILE */
+
+  .footer-contain {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .footer-social {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .footer-social .footer-logo {
+    width: 107px;
+    height: 28px;
+    object-fit: contain;
+    align-self: center;
+    margin-top: -3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  
+
+  .footer-form form {
+    display: flex;
+  }
+
+  .footer-form form input {
+    width: 301px ;
+  }
+
+  .footer-copyright {
+    align-self: center;
+    width: 30ch;
+
+  }
+}
+
+
